@@ -70,7 +70,7 @@ void decrypt(char*IN , char*OUT)
     OUT_temp= OUT ;
     for (i = 0 ; i < len/4 + 1; i++ )
     {
-       // 00_11 11_11 00_11 11_11 00_11 11_11 00_11 11_11
+       
 
          OUT_temp[0] = (IN_temp[0] <<2) | ((IN_temp[1])>>4&0x03) ;
          OUT_temp[1] = (IN_temp[1] <<4) | ((IN_temp[2])>>2&0x0F) ;
